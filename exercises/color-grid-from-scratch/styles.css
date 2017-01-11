@@ -9,57 +9,41 @@ main {
     margin: auto;
 }
 
-.pink {
+.row {
     width: 100%;
     height: 25%;
-    margin: 0px;
+}
+
+.box{
+    display: inline-block;
+    height: 100%;
+}
+
+.pink {
     background-color: #F5C6D6;
     border: 5px solid white;
 }
 
-.fuchsia-box {
-    width: 100%;
-    height: 25%;
-    background-color: #EE2E84
-}
-
 .fuchsia {
-    display: inline-block;
     width: 25%;
-    height: 100%;
     border: 5px solid white;
-}
-
-.blue-box {
-    width: 100%;
-    height: 25%;
-    background-color: #85CFD8;
+    background-color: #EE2E84;
 }
 
 .blue {
-    display: inline-block;
     width: 50%;
-    height: 100%;
-    border: 5px solid white
-}
-
-.bottom-box {
-    width: 100%;
-    height: 25%;
+    border: 5px solid white;
+    background-color: #85CFD8;
 }
 
 .green {
-    display: inline-block;
     width: 75%;
-    height: 100%;
     background-color: #8DC63F;
     border: 5px solid white;
 }
 
 .orange {
-    display: inline-block;
     width: 25%;
-    height: 100%;
     background-color: #E76E34;
     border: 5px solid white;
 }
