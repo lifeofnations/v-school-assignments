@@ -59,7 +59,7 @@ var evilOverlord = {
             ]
         }
     ]
-}
+};
 
 evilOverlord.age = 477;
 evilOverlord.motto = "Death to peasants!";
