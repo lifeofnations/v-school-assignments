@@ -1,0 +1,29 @@
+html {
+    background-color: whitesmoke
+}
+
+.column-one, {
+    display: inline-block;
+    vertical-align: top;
+    column-count: 3;
+    
+}
+
+img {
+    float: left;
+    width: 70%;
+    margin-right: 10px;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.container {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.lead-story {
+    column-count: 3;
+}
