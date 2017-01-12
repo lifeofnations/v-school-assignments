@@ -68,10 +68,9 @@ var shoes = {
 
 var door = {
     material: "wood",
-    centerPannel: "glass",
     hasKnob: "false",
     repair: function() {
-        if (this.hasKnob === false) {
+        if (!this.hasKnob) {
             console.log("Maybe you should get that fixed");
         }
     }
@@ -89,11 +88,11 @@ var projector = {
 };
 
 var wallet = {
-    colors: [orange, purple],
+    colors: ["orange", "purple"],
     style: "standard tri-fold",
     hasMoney: false,
     poorChecker: function() {
-        if (this.hasMoney === false) {
+        if (!this.hasMoney) {
             console.log("that sucks...");
         }
     }
