@@ -7,12 +7,10 @@ function stringPrinter(stringToPrint) {
 function letterFinder(string, letter) {
     for (var i = 0; i < string.length; i++) {
         if (string[i] === letter) {
-            console.log("found " + letter + " at position " + (i + 1));
-            break;
-        } else if (i + 1 === string.length) {
-            console.log("sorry " + letter + " not found")
+            return "found " + letter + " at position " + (i + 1);
         }
     }
+    return "sorry " + letter + " not found";
 }
 
 function findNum42(find42) {
@@ -34,7 +32,9 @@ function findLowestNumber(arrayOfTen) {
 }
 
 stringPrinter("Steve");
-letterFinder("steve", "t");
-letterFinder("steve", "x");
+console.log(letterFinder("steve", "t"));
+console.log(letterFinder("steve", "x"));
 console.log(findNum42([34, 56, 23, 12, 42]));
-console.log(findNum42([44, 222, 3421, 2331])); console.log(findLowestNumber([455, 234, 890, 22, 45, 56, 78, 21, 30, 90])); console.log("should be 21");
+console.log(findNum42([44, 222, 3421, 2331]));
+console.log(findLowestNumber([455, 234, 890, 22, 45, 56, 78, 21, 30, 90]));
+console.log("should be 21");

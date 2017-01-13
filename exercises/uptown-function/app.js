@@ -25,27 +25,35 @@ function stringReverser() {
 }
 
 function everyOtherWord() {
-    var everyOther = lyrics[0];
-    for (var i = 2; i < lyrics.length; i += 2) {
+    var everyOther = "";
+    for (var i = 0; i < lyrics.length; i += 2) {
         everyOther = everyOther + " " + lyrics[i];
     }
     return everyOther;
 }
 
-function pairReverser() {
+function pairReverser(lyrics) {
     var reversePair = "";
-    for (var i = 1; i <= lyrics.length; i += 2) {
-        if (i < lyrics.length) {
-            reversePair = reversePair + " " + lyrics[i];
-            reversePair = reversePair + " " + lyrics[i - 1];
-        } else if (i === lyrics.length) {
-            reversePair = reversePair + " " + lyrics[i - 1];
+    if (lyrics.length % 2 != 0) {
+        for (var i = 1; i <= lyrics.length; i += 2) {
+            if (i < lyrics.length) {
+                reversePair +=  " " + lyrics[i] + " " + lyrics[i - 1];
+            } else {
+                reversePair += " " + lyrics[i - 1];
+            }
+        }
+    } else {
+        for (var i = 1; i <= lyrics.length; i += 2) {
+            reversePair += " " + lyrics[i] + " " + lyrics[i - 1];
         }
     }
     return reversePair;
 }
 
+
+
+
 //console.log(stringMaker());
 //console.log(stringReverser());
 //console.log(everyOtherWord());
-console.log(pairReverser());
+console.log(pairReverser(lyrics));
