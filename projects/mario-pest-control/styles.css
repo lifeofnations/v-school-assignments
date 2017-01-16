@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    width: 80%;
+    min-width: 600px;
+    margin: auto;
+    background-color: lightgrey;
+}
+
+header {
+    background-color: darkgray;
+}
+
+header h1 {
+    top: 20px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+header h4 {
+    text-align: right;
+    top: 40%;
+}
+
+nav {
+    position: relative;
+    top:  ;
+    width: 100%;
+    min-width:;
+    background-color: lightblue;
+}
+
+nav a {
+    margin: 15px;
+    text-align: center;
+}
+
+nav h2 {
+    text-align: right;
+    background-color: aqua;
+}
+
+main {
+    position: relative;
+    top: 3%;
+    width: 100%;
+    min-width: 200px;
+    height: 100%;
+    
+}
+
+li {
+    list-style: none;
+}
+
+.task-info {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    display: inline-block;
+    width: 33%;  
+}
+
+.box h3 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    width:200px;
+    margin: auto;
+}
+
+.coin {
+    width: 20px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.coin.total-coin {
+    width: 40px;
+}
+
+input {
+    width: 50px;
+}
+
+task-info h2 {
+    text-align: right;
+}
+
+footer {
+    width: 80%;
+    position: static;
+    bottom: 0%;
+    margin: auto;
+    min-width: 750px;
+}
+
+footer a {
+    display: inline-block;
+    margin: 8px;
+    
+}
