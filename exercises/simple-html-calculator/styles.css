@@ -1,0 +1,35 @@
+main {
+    column-count: 3;
+}
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 75px;
+}
+
+div {
+    height: 100px;
+}
+
+button {
+    display: inline-block;
+    margin-top: 5px;
+    width: 65%
+}
+
+.add {
+    background-color: blue;
+    color: white;
+}
+
+.subt {
+    background-color: red;
+    color: white;
+}
+
+.multiply {
+    background-color: green;
+    color: white;
+}
