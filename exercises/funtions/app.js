@@ -71,8 +71,9 @@ function quadraticBS(a, b, c) {
 }
 
 //var string = "lkasdjsflasdnfoaiessfaslkfdnaoiefhsaldfnakfsheossssssfa";
-var string = "qwertyuIopasdfGhjklzxcvbnm";
-
+//var string = "qwertyuIopasdfGhjklzxcvbnm";
+//var string = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam velit debitis mollitia consequatur, vero dicta sunt earum repellat minima fugiat ab consectetur laudantium ipsa explicabo tempore, obcaecati veritatis fuga molestias?";
+//var string = "oooooeeeeebbbbbwwwww";
 
 function stringFrequency(string) {
     var string = string.toLowerCase().split("").sort().join("").trim();

@@ -1,5 +1,6 @@
 var box = document.getElementById("box");
 var body = document.getElementById("body");
+
 function blue() {
     box.style.backgroundColor = "blue";
 }

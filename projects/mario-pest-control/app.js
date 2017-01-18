@@ -31,7 +31,6 @@ cheepCheepSmash.setAttribute("value", 5);
 goombaTotal();
 bobOmbTotal();
 cheepCheepTotal();
-grandTotalCalculator();
 
 goombaSmash.addEventListener("change", goombaTotal);
 bobOmbsSmash.addEventListener("change", bobOmbTotal);

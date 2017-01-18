@@ -1,0 +1,56 @@
+html{
+    background-color: black;
+}
+
+nav {
+    background-color: violet;
+    z-index: 1;
+    position: fixed;
+    height: 50px;
+    width: 70%;
+    top: 0;
+    
+}
+
+nav a {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    vertical-align: center;
+    font-size: 2em;
+}
+
+main {
+    position: relative;
+    top: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+}
+
+main h1 {
+    font-size: 4em;
+}
+
+.date {
+    text-align: right;
+}
+
+main div {
+    margin-bottom: 250px;
+}
+
+main p {
+    font-size: 1.5em;
+}
+
+img {
+    max-width: 400px;
+    float: right;
+    margin: 20px;
+}

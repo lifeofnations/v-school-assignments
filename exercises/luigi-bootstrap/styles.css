@@ -1,0 +1,53 @@
+* {
+    font-family: "super mario 256";
+}
+
+p {
+    font-family: "arial black";
+    font-size: 1.2em;
+}
+
+h2, p {
+    color: red;
+}
+
+.header {
+    background-color: gold
+}
+
+.header h1 {
+    color: red;
+    margin-left: 10%;
+}
+
+.luigi {
+    display: block;
+    top: 15px; 
+    position: relative;
+    width: 243px;
+    float: none;
+    margin: auto;
+    
+}
+
+.red {
+    display: relative;
+    height: 300px;
+    background-color: red;
+}
+
+.about-me * {
+    text-align: center;
+}
+
+.foot {
+    background-color: gold;
+}
+
+.xtralife {
+    float: right;
+    height: 40px;
+    margin-right: 3%;
+}
+
+
