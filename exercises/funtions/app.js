@@ -49,6 +49,16 @@ function fibonacci(number) {
     return sum;
 }
 
+//function mult(number) {
+//    if (number <= 0) {
+//        return 1;
+//    } else {
+//        return number * mult(number - 1);
+//    }
+//}
+//
+//console.log(mult(6));
+
 function quadraticBS(a, b, c) {
     var solutions = [];
     if (a === 0) {
@@ -95,7 +105,7 @@ function stringFrequency(string) {
     return mostFrequent;
 }
 
-console.log(stringFrequency(string));
+//console.log(stringFrequency(string));
 
 //console.log(quadraticBS(5, 6, 1));
 //console.log("sum: " + fibonacci(10));

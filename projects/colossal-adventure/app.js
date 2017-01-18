@@ -1,10 +1,34 @@
 var ask = require("readline-sync");
-//start with fun message
-console.log("Welcome to the dungeon of DOOOOOOOOOOM!!!!!!!!!");
-//ask for and save player name
-var playerName("What is the name of your Doomed character ");
 
-var PlayerCreation() {
+console.log("Welcome to the dungeon of DOOOOOOOOOOM!!!!!!!!!");
+//var playerName = ask.question("What is the name of your Doomed character ");
+var stats = [];
+function numGenerator(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min
+}
+function statGeneration() {
+    stats = [];
+    for (var i = 1; i <= 4; i++) {
+        stats.push(Math.floor(Math.random() * 4) + 1);
+    }
+}
+statGeneration();
+console.log(stats);
+
+function PlayerCreation() {
+    this.name = playerName;
+    this.str = stats[0];
+    this.acc = stats[1];
+    this.con = stats[2];
+    this.def = stats[3];
+    this.HP = this.con * 2;
+    this.weapon = "none";
+    this.acessory = "none";
+    this.armor = "none";
+    this.shield = "none";
+    this.characterSheet = function() {
+        console.log("\tName: " + this.name + "\n\tStr: " + this.str + "\n\tAcc: " + this.acc + "\n\tCon: " + this.con + "\n\tDef: " + this.def + "\n\tWeapon: " + this.weapon + "\n\tAcessory: " + this.acessory + "\n\tArmor: " + this.armor + "\n\tShield: " + this.shield);
+    }
     
 }
 //build a player object
