@@ -4,12 +4,12 @@ console.log("Welcome to the dungeon of DOOOOOOOOOOM!!!!!!!!!");
 //var playerName = ask.question("What is the name of your Doomed character ");
 var stats = [];
 function numGenerator(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 function statGeneration() {
     stats = [];
     for (var i = 1; i <= 4; i++) {
-        stats.push(Math.floor(Math.random() * 4) + 1);
+        stats.push(numGenerator(1, 4));
     }
 }
 statGeneration();
