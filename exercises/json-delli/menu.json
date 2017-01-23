@@ -1,0 +1,103 @@
+{
+    "appetizers": [
+        {
+            "name": "Chips and Salsa",
+            "ingredients": [
+                "Corn tortilla chips",
+                "Tomato salsa"
+            ],
+            "description": "Fresh handmade tortilla chips and medium salsa."
+        },
+        {
+            "name": "Fried Seitan",
+            "ingredients": [
+                "Gluten",
+                "water"
+            ],
+            "description": "Fried seitan served with a your choice of dipping sause."
+        }
+    ],
+    "coldSandwiches": [
+        {
+            "name": "Veggie Combo",
+            "ingredients": [
+                "White bun",
+                "kale",
+                "cucumber",
+                "tomato",
+                "pickle",
+                "mustard"
+            ],
+            "description": "Ultimate Veggie Sub add anything you can think of!"
+        },
+        {
+            "name": "All the 'Meats'",
+            "ingredients": [
+                "White bread",
+                "Seitan",
+                "Tofu",
+                "Mushrooms",
+                "any vegitable"
+            ],
+            "description": "We don't even know how to describe this, or if it is even any good.. Try it today!"
+        }
+    ],
+    "hotSandwiches": [
+        {
+            "name": "The Ruby",
+            "ingredients": [
+                "Rye",
+                "saurkraut",
+                "mushrooms",
+                "onions"
+            ],
+            "description": "The classic Reuben, but with a different name... and mushrooms!!!"
+        },
+        {
+            "name": "HTML",
+            "ingredients": [
+                "white bread",
+                "tomatos",
+                "mushrooms",
+                "lettuce"
+            ],
+            "description": "Hot Tomato Mushroom Lettuce"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "Rasberry PI",
+            "ingredients": [
+                "rasberrys",
+                "pie"
+            ],
+            "description": "You already know if you want this one!"
+        },
+        {
+            "name": "CSS",
+            "ingredients": [
+                "stuff",
+                "more stuff"
+            ],
+            "description": "We just threw stuff at this one untill it looked good!"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Soda",
+            "ingredients": [
+                "sugar!!!!",
+                "some water"
+            ],
+            "description": "Sugar and Caffeene..."
+        },
+        {
+            "name": "Beer",
+            "ingredients": [
+                "hops",
+                "malt"
+            ],
+            "description": "Hops, Hops, and more Hops"
+        }
+    ]
+}

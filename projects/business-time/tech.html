@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-
+    <title>Name It</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -23,7 +22,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="tech.html">Tech<span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="tech.html">Tech<span class="sr-only">(current)</span></a></li>
                     <li><a href="restaurant.html">Restaurant</a></li>
                 </ul>
                 <form class="navbar-form navbar-right">
@@ -39,17 +38,20 @@
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                 <main>
-                    <h3 class="text-center">Can't think of a name for your brand new start up? Let us do it for you!</h3>
-                    <p class="text-center">Here at <strong>Name It</strong>, we understand the importance of a name. It defines who you are, and what you stand for as a company! We also understand the time it takes to come up with the perfect name. Time you could be spending working on other important tasks. That's why we devloped a sophisticated algorithim to name your company for you! You worry about getting your new company off the ground, and we'll handle the rest!</p>
+                    <h3 class="text-center">Let's name your new tech company!</h3>
+                   
+                       <button id="tech-button">Name It!</button>
+                    
                 </main>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-5 col-sm-offset-1">
-                <a href="tech.html"><img src="http://www.realcastmedia.com/wp-content/uploads/2016/03/022759581_prevstill.jpg"></a>
+            <div class="col-xs-12 col-sm-5 col-sm-offset-1 tech">
+                <img src="http://www.realcastmedia.com/wp-content/uploads/2016/03/022759581_prevstill.jpg">
             </div>
-            <div class="col-xs-12 col-sm-5">
-                <a href="restaurant.html"><img src="https://static1.squarespace.com/static/51343cf8e4b0c6fb04de5ac0/56aaac10d210b85419e0d759/56ac909f62cd942d9e44f7e3/1470685971447/01_FinalRender_shotcam.jpg?format=2500w"></a>
+            <div class="col-xs-12 col-sm-5 restaurant">
+                <h3>Name</h3>
+                <h2 id="tech-name">New Name</h2>
             </div>
         </div>
     </div>

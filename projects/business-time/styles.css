@@ -1,0 +1,53 @@
+html {
+    background-image: url("footer_lodyas.png")
+}
+
+html * {
+    background-color: rgba(255,255,255,.0);
+}
+
+main {
+background-color: white;
+    border-radius: 15px
+}
+
+main h3, p {
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.main {
+    position: relative;
+    top: 50px;
+}
+
+.tech, .restaurant {
+    position: relative;
+    margin-top: 15px;
+}
+
+#restaurant-button, #tech-button {
+    color: white;
+    background-color: darkblue;
+    display: block;
+    position: relative;
+    margin: auto;
+    bottom: 15px;
+}
+
+.restaurant h3, h2  {
+    position: relative;
+    display: inline-block;
+    color: white;
+    width: 1920px;
+    height: ;
+    text-align: center;
+    max-width: 100%;
+}

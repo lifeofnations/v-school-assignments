@@ -1,0 +1,2 @@
+Warm up where we had to inverse the capitolization of a string input. At this point, this one was pretty easy. I finished in < 10min
+also, we learned about callback functions the day befor so I implemented one in this exercise to practice using them.
