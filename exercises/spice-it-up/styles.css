@@ -21,6 +21,12 @@ img {
     width: 100%;
     border-radius: 15px;
     margin-top: 20px;
+    transition: 1s all;
+    
+}
+
+img:hover {
+    filter: grayscale(80%);
 }
 
 .main {

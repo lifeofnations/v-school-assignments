@@ -160,7 +160,7 @@ function moveFlavor() {
         "The only way is forward..",
         "The way is dark, but you must press on..",
         "For a moment you are hopefull, but the feeling is fleeting..",
-        "Dim torches cast errie shadows..",
+        "Dim torches cast eerie shadows..",
         "The hall is well lit... you wish it wasn't..",
         "Your mind is assaulted with visions of your own death",
         "You think you hear laughter in the distance..",
@@ -273,7 +273,7 @@ function treasureReward() {
     if (player.weapon.type === treasure.type) {
         if (player.weapon.stat < treasure.stat) {
             player.weapon = treasure;
-            console.log("Bigger is better! +" + treasure.stat + " str\n");
+            console.log("Bigger IS better! +" + treasure.stat + " str\n");
         } else {
             console.log("You have seen sticks sharper..\n");
         }
