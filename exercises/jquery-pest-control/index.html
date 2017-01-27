@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mario Pest Control</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Mario Pest Control</h1>
+    </header>
+    <nav>
+        <a>Home</a>
+        <a>Account</a>
+        <a>Status</a>
+        <a>Profile</a>
+        <button id="night">night mode</button>
+        <h3>Status Report</h3>
+    </nav>
+    <main>
+        <div class="task-info">
+            <div class="goomba-box box">
+                <img src="http://vignette3.wikia.nocookie.net/mario/images/b/b2/GoombaSM3DWArtwork.png/revision/latest?cb=20131111161124">
+                <h4>Goombas</h4>
+                <ul>
+                    <li>Price</li>
+                    <ul>
+                        <li>5<img class="coin" src="http://vignette4.wikia.nocookie.net/mario/images/c/c8/Golden_Coin_(New_Super_Mario_Bros.).png/revision/latest?cb=20110313000322"></li>
+                    </ul>
+                    <li>Total Smashed</li>
+                    <ul>
+                        <input id="goombas-smashed" type="number" maxlength="2">
+                    </ul>
+                    <li>Total</li>
+                    <ul>
+                        <li><span id="goomba-cost">#</span><img class="coin" src="http://vignette4.wikia.nocookie.net/mario/images/c/c8/Golden_Coin_(New_Super_Mario_Bros.).png/revision/latest?cb=20110313000322"></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="bob-omb-box box">
+                <img src="http://vignette3.wikia.nocookie.net/nintendo/images/8/86/Bob-omb_(MKWii).png/revision/latest?cb=20120819225302&path-prefix=en">
+                <h4>Bob-ombs</h4>
+                <ul>
+                    <li>Price</li>
+                    <ul>
+                        <li><span>7</span><img class="coin" src="http://vignette4.wikia.nocookie.net/mario/images/c/c8/Golden_Coin_(New_Super_Mario_Bros.).png/revision/latest?cb=20110313000322"></li>
+                    </ul>
+                    <li>Total Smashed</li>
+                    <ul>
+                        <input id="bob-ombs-smashed" type="number" maxlength="2">
+                    </ul>
+                    <li>Total</li>
+                    <ul>
+                        <li><span id="bob-omb-cost">#</span><img class="coin" src="http://vignette4.wikia.nocookie.net/mario/images/c/c8/Golden_Coin_(New_Super_Mario_Bros.).png/revision/latest?cb=20110313000322"></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="cheep-cheep-box box">
+                <img src="https://dreager1.files.wordpress.com/2015/04/cheep_cheep_new_super_mario_bros-_u.png">
+                <h4>Cheep Cheeps</h4>
+                <ul>
+                    <li>Price</li>
+                    <ul>
+                        <li>11<img class="coin" src="http://vignette4.wikia.nocookie.net/mario/images/c/c8/Golden_Coin_(New_Super_Mario_Bros.).png/revision/latest?cb=20110313000322"></li>
+                    </ul>
+                    <li>Total Smashed</li>
+                    <ul>
+                        <input id="cheep-cheeps-smashed" type="number" maxlength="2">
+                    </ul>
+                    <li>Total</li>
+                    <ul>
+                        <li><span id=cheep-cheep-cost>#</span><img class="coin" src="http://vignette4.wikia.nocookie.net/mario/images/c/c8/Golden_Coin_(New_Super_Mario_Bros.).png/revision/latest?cb=20110313000322"></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="grand-bar">
+                <h2 class="grand-total-header">Grand Total:</h2>
+                <h2><span id="grand-total">#</span><img class="coin total-coin" src="http://vignette4.wikia.nocookie.net/mario/images/c/c8/Golden_Coin_(New_Super_Mario_Bros.).png/revision/latest?cb=20110313000322"></h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a>mariostar@mushroomkingdom.com</a>
+        <a>mariopestcontrol.com</a>
+        <a>500 Mushroom Castle Way, Mushroom Kingdom</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

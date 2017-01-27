@@ -1,5 +1,5 @@
 var penguins = new PartyMaker("The Penguins", 4, 1000);
-var communists = new PartyMaker("The Communists", 6, 600);
+var communists = new PartyMaker("The Communists", 6.5, 650);
 var turn = getNumber(1, 2);
 var theWar = setInterval(launchNuke, 4000);
 

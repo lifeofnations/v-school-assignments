@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">Welcome to High Score Haven!</h1>
+
+        </div>
+        <div class="row">
+            <form class="col-md-6" id="high-score-entry">
+                <input name="your-name" id="enter-name" placeholder="name">
+                <label for="enter-name">Your Name</label>
+                <br>
+                <input name="date" id="date" placeholder="mm/dd/yyyy">
+                <label for="date">Enter Date</label>
+                <br>
+                <select name="game-select" id="game-list">
+                    <option value="Mario">Mario</option>
+                </select>
+                <label for="game-list">Select Your Game</label>
+                <br>
+                <input id="score-entry" placeholder="score">
+                <label for="score-entry">Enter Score</label>
+                <br>
+                <input type="checkbox" id="insult-check">
+                <lable for="insult-check">Add an Insult?</lable>
+                <br>
+                <button type="button" name="score-submit" class="submit">Submit</button>
+            </form>
+            <form class="col-md-6 text-right" id="add-new">
+                <label for="new-game">Add a New Game</label>
+                <input name="new-game" placeholder="name of game">
+                <br>
+                <p>Score Type</p>
+                <label for="high-score">High Score</label>
+                <input type="radio" id="high-score" name="score-type" value="score-high">
+                <br>
+                <label for="low-time">Best Time</label>
+                <input type="radio" id="low-time" name="score-type" value="time-low">
+                <br>
+                <button type="button" name="new-game-submit" class="submit">Submit</button>
+
+            </form>
+        </div>
+        <div class="row">
+            <h2>Top Scores</h2>
+        </div>
+        <div id="game-tables">
+            <h3>Mario</h3>
+            <h4>Best Times</h4>
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Score</th>
+                        <th>Insult</th>
+                    </tr>
+                <tbody id="Mario">
+                    
+                </tbody>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
