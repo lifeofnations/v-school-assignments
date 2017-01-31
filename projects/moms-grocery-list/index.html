@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mom's List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+           <div class="col-sm-6 col-sm-offset-3">
+            <h1 class="text-center">Mom's Shopping List</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4 add-an-item">
+                <div class="row">
+                    <h3 class="text-center">Add an item</h3>
+                    <fourm class="col-sm-6 col-sm-offset-3 text-center" id="item-adder">
+                        <button type="button" id="item-submit">Add Item</button>
+                        <input placeholder="new item" id="item-input">
+                    </fourm>
+                </div>
+            </div>
+            <div class="col-sm-6 the-list">
+                <h3 class="text-center">Things to Buy</h3>
+                <ul id="item-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

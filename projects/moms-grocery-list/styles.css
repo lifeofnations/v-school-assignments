@@ -1,0 +1,28 @@
+.the-list h3 {
+    border-bottom: 2px black solid;
+}
+
+li {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+h1,
+h3,
+.the-list {
+    background-color: rgba(255,255,255,.8);
+}
+
+body {
+    background-image: url(rqs7r2czl68-hey-andrw.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: whitesmoke;
+}
+
+.the-list {
+    margin-top: 20px;
+}
+

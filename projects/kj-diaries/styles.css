@@ -1,0 +1,459 @@
+* {
+    font-family: avenir, sans-serif;
+}
+
+.image-brand {
+    position: relative;
+    height: 40px;
+    bottom: 10px;
+}
+
+.navbar {
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.navbar-header {
+    height: 50px;
+}
+
+.navbar-nav {
+    margin-left: 15%;
+}
+
+.navbar-nav li {
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.fa-search {
+    right: -165px;
+    position: relative;
+    color: gray;
+}
+
+.navbar-left input {
+    border: 1px solid lightgrey;
+    border-radius: 0;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus{
+    background-color: #F3C3AC;
+}
+
+.navbar-brand {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+nav a {
+    color: black;
+    font-family: "Avenir";
+}
+
+.nav-peach:hover, dropdown-menu>li>a:hover {
+    background-color: #F3C3AC;
+}
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+
+#carousel {
+    position: relative;
+    max-height: 600px;
+    height: auto;
+}
+
+.email {
+    position: relative;
+    background-color: #F3C3AC;
+    height: 40px;
+    top: -40px;
+}
+
+.email input {
+    width: 90%;
+    display: inline-block;
+    left: 5%;
+    bottom: 14px;
+    position: relative;
+    border: none;
+    height: 25px;
+}
+
+.main-content h3 {
+    position: relative;
+    font-size: 36px;
+    top: -15px;
+}
+
+.main-content h3:hover {
+    color: #F3C3AC;
+}
+
+.main-content p span:hover {
+    color: #F3C3AC;
+}
+
+.blog-date-box {
+    border-top: 1px solid lightgrey;
+}
+
+.blog-date {
+    position: relative;
+    background-color: white;
+    top: -8px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.font-grey {
+    color: grey;
+    font-size: 12px;
+}
+
+.blog-p {
+    margin-top: 10px;
+    line-height: 1.8em;
+}
+
+.read-more {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    box-shadow: none;
+    font-weight: 100;
+    color: lightgrey;
+    padding: 10px;
+    transition-duration: .3s;
+}
+
+.read-more:hover {
+    color: white;
+    background-color: grey;
+}
+
+.email span {
+    position: relative;
+    display: inline-block;
+    top: -12px;
+    right: 30px;
+}
+
+.main-content {
+    position: relative;
+    margin-top: 120px;
+}
+
+.item {
+    max-height: 630px;
+}
+
+.content {
+    position: relative;
+}
+
+
+/*
+.main-content * {
+    position: relative;
+}
+*/
+
+.blog-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content button {
+    display: inline-block;
+}
+
+.adds h4 {
+    font-weight: 75;
+    font-size: 16px;
+}
+
+.media-icon {
+    position: relative;
+    font-size: 30px;
+    margin-right: 20px;
+    color: #F3C3AC;
+}
+
+.follow-icon:hover {
+    color: #F3C3AC;
+}
+
+.post-footer {
+    margin-bottom: 50px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.post-footer div {
+    position: relative;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    box-shadow: none;
+}
+
+.related-bar {
+    position: relative;
+    top: 20px;
+    background-color: white;
+    z-index: 10;
+    font-weight: 100;
+}
+
+.related-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.follow-box,
+.subscribe-box,
+.wishlist-box,
+.fav-box {
+    border: 1px solid lightgrey;
+    margin-bottom: 60px;
+}
+
+.follow-head,
+.subscribe-head,
+.wish-head,
+.fav-head {
+    position: relative;
+    background-color: white;
+    top: -18px;
+    font-weight: 100;
+}
+
+.follow-icon {
+    top: -15px;
+}
+
+.fa-envelope-o:hover {
+    color: #F3C3AC;
+}
+
+.be-first {
+    top: -10px;
+    position: relative;
+}
+
+.sub {
+    position: relative;
+}
+
+.subscribe-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    top: -10px;
+    border: none;
+}
+
+.sub-mail {
+    position: absolute;
+    top: 63px;
+    right: 15px;
+}
+
+.wish-img-box {
+    height: 160vw;
+    width: 90vw;
+    margin: auto;
+}
+
+.wish-img {
+    width: 100vw;
+    height: 150vw;
+}
+
+.carousel-caption {
+    bottom: -41px;
+    color: black;
+    text-shadow: none;
+    font-style: italic;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background: none;
+    top: 200px;
+    margin: 0;
+    font-size: 30px;
+    box-shadow: none;
+    color: black;
+}
+
+span.fa-angle-left,
+span.fa-angle-right {
+    color: black;
+}
+
+span.fa-angle-right:hover,
+span.fa-angle-left:hover {
+    color: white;
+    background-color: black;
+}
+
+.fa-caret-down {
+    position: absolute;
+    right: 10px;
+    bottom: 11px;
+}
+
+.fav-img {
+    margin: 10px;
+}
+
+.fav-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.archive-select {
+    width: 100%;
+    height: 35px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+
+.fa-caret-down {
+    z-index: 100;
+}
+
+.content {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.foot-img {
+    margin: -2px;
+    box-sizing: border-box;
+    width: 100vw;
+    object-fit: cover;
+    height: 100vw;
+    transition-duration: .5s;
+}
+
+.blog-img:hover,
+.foot-img:hover {
+    filter: opacity(80%);
+}
+
+@media (min-width: 768px) {
+    .foot-img {
+        margin: -2px;
+        box-sizing: border-box;
+        width: 10vw;
+        height: 10vw;
+        object-fit: cover;
+    }
+    .wish-img-box {
+        height: 375px;
+        width: 90%;
+        margin: auto;
+    }
+    .email input {
+        width: 33%;
+        display: inline-block;
+        bottom: 14px;
+        position: relative;
+        left: 33%;
+        border: none;
+        height: 25px;
+    }
+    .form-group span {
+        position: relative;
+        margin-left: 425px;
+    }
+}
+
+.foot-left,
+.foot-right {
+    display: inline-block;
+}
+
+.foot-left {
+    float: right;
+}
+
+.foot-foot {
+    position: relative;
+    margin-top: 75px;
+    color: lightgrey;
+    background-color: black;
+    font-size: 10px;
+}
+
+.next {
+    font-style: italic;
+}
+
+.next:hover {
+    color: #F3C3AC;
+}
+
+
+/*
+evaneer
+bebas neue
+font-family: Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+internet suggests google font: Nunito (Book 300)
+*/
+
+
+/*<li role="separator" class="divider"></li>*/
