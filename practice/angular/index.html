@@ -1,0 +1,23 @@
+<!-- View -->
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app="MyAppName"> <!-- Name of your angular app here -->
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body ng-controller="MainController"> <!-- Where you put controler -->
+    
+    <h1>Name: {{ name }}</h1> <!--String Templating  {{ }} looks at scope-->
+    <input type="text" placeholder="enter name" ng-model="name">
+    <!-- ng-model="" is how the two way data binding works -->
+    <p ng-repeat="thing in array">{{ thing }}</p>
+    <!-- will for loop an array to create elements 'thing' 'array' are imp -->
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>       
+</body>
+</html>

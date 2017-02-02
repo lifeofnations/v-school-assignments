@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-controller="MyController">
+    <div class="row">
+
+        <div class="well col-sm-4">
+            <h3 class="text-center">Name: {{ person.name }}</h3>
+            <input type="text" ng-model="person.name">
+        </div>
+        <div class="well col-sm-4">
+            <h3 class="text-center">Age: {{ person.age }}</h3>
+            <input type="number" ng-model="person.age">
+        </div>
+        <div class="well col-sm-4">
+            <h3 class="text-center">Does: {{ person.does }}</h3>
+            <input type="text" ng-model="person.does">
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

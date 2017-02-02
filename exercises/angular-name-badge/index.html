@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body ng-controller="MyController">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 border">
+                <fourm>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="First Name" ng-model="newBadge.firstName">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="Last Name" ng-model="newBadge.lastName" ng-disabled="!newBadge.firstName">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="Email" ng-model="newBadge.email" ng-disabled="!newBadge.lastName">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="Place of Birth" ng-model="newBadge.birthPlace" ng-disabled="!newBadge.email">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="number" placeholder="Phone" ng-model="newBadge.phone" ng-disabled="!newBadge.birthPlace">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="Favorite Food" ng-model="newBadge.favFood" ng-disabled="newBadge.phone < 9999999999 || newBadge.phone > 99999999999 || newBadge.phone === NaN">
+                        </div>
+                        <div class="col-xs-12">
+                            <textarea ng-model="newBadge.about" ng-disabled="!newBadge.favFood">Tell us about yourself</textarea>
+                        </div>
+                        <div class="col-xs-2 col-xs-offset-5">
+                            <button ng-click="addBadge()" ng-disabled="!newBadge.about">Submit</button>
+                        </div>
+                    </div>
+                </fourm>
+            </div>
+        </div>
+        <div class="row" ng-repeat="thing in badges">
+            <div class="col-xs-10 col-xs-offset-1 border">
+                <div class="row">
+                    <h1>Badge</h1>
+                    <div class="col-sm-6">
+                        <p>Name: {{ thing.firstName }} {{ thing.lastName }}</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Phone: {{ thing.phone }}</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Place of birth: {{ thing.birthPlace }}</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Favorite food: {{ thing.favFood }}</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Email: {{ thing.email }}</p>
+                    </div>
+                    <div class="col-xs-12">
+                        <textarea>{{ thing.about }}</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
