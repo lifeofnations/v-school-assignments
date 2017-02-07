@@ -1,0 +1,11 @@
+.text-input {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}

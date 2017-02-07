@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="myController">
+   <div class="container">
+       <div class="row">
+          <div class="col-sm-6 col-xs-12 pull-right">
+               <h1>For Adding Stuff</h1>
+               <form id="new-todo">
+                   <input class="text-input" type="text" placeholder="Add a todo" ng-model="addToDo.title">
+                   <lable>Description (optional)</lable>
+                   <textarea class="text-input" ng-model="addToDo.description"></textarea>
+                   <input class="text-input" type="text" placeholder="price (optional)" ng-model="addToDo.price">
+                   <input class="text-input" type="url" placeholder="img url (optional)" ng-model="addToDo.imgUrl" >
+                   <button ng-click="addButton()" ng-hide="addToDo._id">Add</button>
+                   <button ng-click="applyButton(addToDo._id)" ng-hide="!addToDo._id">Update</button>
+                   
+               </form>
+           </div>
+           <div class="col-sm-6">
+             <h1>For Listing Stuff</h1>
+              <div ng-repeat="thing in list track by $index">
+                  <p ng-class="{'strikethrough' : thing.completed}"><input type="checkbox" ng-model="thing.completed" ng-change="strikeThrough(thing, $index)"></input> {{ thing.title }} 
+                  </p>
+                  <ul>
+                      <li ng-class="{'strikethrough' : thing.completed}">{{ thing.description }}<li>
+                      <li ng-class="{'strikethrough' : thing.completed}">Price: {{ thing.price }}</li>
+                      <button ng-click="changeButton(thing._id)">Edit</button><button ng-click="deleteButton(thing._id)">Delete</button>
+                  </ul>
+                  <img ng-src="{{ thing.imgUrl }}">
+                  
+                  
+              </div>
+           </div>
+       </div>
+   </div>
+   
+   
+   
+   
+   
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

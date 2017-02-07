@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Ugly Things</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="myController">
+    <div class="container">
+        <div class="row">
+            <div>
+                <form>
+                    <div class="col-sm-4">
+                    <input type="text" placeholder="Title" ng-model="uglyThing.title">
+                    </div>
+                    <div class="col-sm-4">
+                    <input type="text" placeholder="Img URL" ng-model="uglyThing.url">
+                    </div>
+                    <div class="col-sm-4">
+                    <input type="text" placeholder="Description" ng-model="uglyThing.description">
+                    </div>
+                    <div class="col-xs-4 col-xs-offset-4">
+                        <button class="submit" ng-click="addUgly()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" ng-repeat="thing in uglyThings track by $index">
+               <h3 class="text-center">{{ thing.title }}</h3>
+                <img ng-src="{{ thing.url }}">
+                <p class="text-center">{{ thing.description }}</p>
+                <div ng-repeat="item in thing.comments track by $index">
+                <p class="comments">{{ item }}</p>
+                <button ng-click="deleteComment($parent.$index, $index)">Delete Comment</button>
+                </div>
+                <button ng-click="uglyComment($index, aComment)">Comment?</button>
+                <input ng-model="aComment">
+                <button class="" ng-click="removeUgly(thing, $index)">Remove</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

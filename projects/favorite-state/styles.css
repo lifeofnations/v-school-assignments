@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+    .navbar-inverse {
+        position: fixed;
+    }
+  .sidebar-nav .navbar .navbar-collapse {
+    position: fixed;
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+body {
+    background-image: url(http://saltlakesaturdays.com/wordpress/wp-content/uploads/2015/11/snowy-mountains-at-night-wallpaper-2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+p, h4, .about, .content h1 {
+    color: white;
+    background-color: rgba(50,50,50,.7);
+}
+
+h1 {
+    color: grey;
+}
+
+.sidebar-nav {
+}

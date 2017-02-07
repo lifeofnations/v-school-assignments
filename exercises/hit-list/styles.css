@@ -1,0 +1,21 @@
+img {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+    position: relative;
+}
+
+h3 {
+    position: relative;
+    color: white;
+    bottom: 45px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+
+h1 {
+    color: white;
+    background-color: black;
+}
+
