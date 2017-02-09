@@ -1,2 +1,3 @@
 .DS_Store
 node_modules/
+/projects/personal-angular-site/components/services/key.js

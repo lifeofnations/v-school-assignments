@@ -1,0 +1,25 @@
+.red-box, .blue-box {
+    margin-top: 200px;
+}
+
+.red-box label {
+    color: red;
+}
+
+.blue-box label {
+    color: blue;
+}
+
+.button {
+    text-align: center;
+}
+
+label {
+    font-size: 2em;
+}
+
+button {
+    width: 200px;
+    height: 200px;
+    font-size: 3em;
+}
