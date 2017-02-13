@@ -1,0 +1,1 @@
+Making a League of Legends fan site using the Riot Games API, I have a developer key in a seperate service so I could put that file in my .gitignore

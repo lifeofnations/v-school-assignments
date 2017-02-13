@@ -10,3 +10,37 @@ body {
 .summoner-img {
     width: 100%;
 }
+
+.all-img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.all-name {
+    position: relative;
+    top: -8px;
+}
+
+.splash {
+    width: 100%;
+}
+
+
+
+
+
+@keyframes ng {
+    from {display: none;}
+    to {display: block;}
+}
+
+
+.ng-show {
+    animation-name: ng;
+    animation-duration: 2s;
+}
+
+.ng-hide {
+    transition-duration: 2s; 
+
+}

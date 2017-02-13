@@ -1,3 +1,21 @@
-<div>
-    <h1>ranked</h1>
+<div class="row">
+    <h1 class="text-center">All Champions</h1>
+</div>
+<div class="row">
+    <div>
+        <div class="row">
+            <div ng-class="{'col-sm-2': thing.name !== name}" ng-repeat="thing in allChamps track by $index" ng-route="/ranked/{{thing.name}}">
+                <div ng-hide="thing.name === name">
+                    <a href="#/champions/{{thing.name}}"><img class="all-img" ng-click="select($index)" ng-src="http://ddragon.leagueoflegends.com/cdn/7.3.1/img/champion/{{ thing.image.full }}" alt=""></a>
+                    <h5 class="text-center all-name">{{ thing.name }}</h5>
+                </div>
+                <div ng-show="thing.name === name" ng-model="thing.currentSkin">
+                    <img class="splash" ng-src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{ thing.key }}_{{ thing.currentSkin }}.jpg" alt="">
+                    <div class="text-center">
+                    <button ng-repeat="skin in thing.skins track by $index" ng-click="newSkin($index, $parent.$index)">{{ skin.name }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

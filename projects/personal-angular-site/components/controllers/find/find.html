@@ -12,15 +12,15 @@
             <button ng-click="findSummoner(summonerName)">Submit</button>
         </form>
         <div class="min-list">
-            <ul ng-repeat="thing in summoners">
-                <li>{{ thing.name }}</li>
+            <ul ng-repeat="thing in playerNames">
+                <li>{{ thing }}</li>
             </ul>
         </div>
     </div>
     <div class="col-sm-8">
         <div class="row">
-            <div class="col-sm-4 summoner-list" ng-repeat="thing in summoners">
-                <h4 class="text-center">{{ thing.name }}</h4>
+            <div class="col-sm-4 summoner-list" ng-repeat="thing in playerMainInfo track by $index">
+                <h4 class="text-center">{{ thing.playerName }}</h4>
                 <h5 class="text-center">{{ thing.title }}</h5>
                 <img class="summoner-img" ng-src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/{{ thing.name.split(' ').join('') }}_0.jpg">
             </div>

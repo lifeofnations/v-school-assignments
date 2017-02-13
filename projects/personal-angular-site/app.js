@@ -1,4 +1,4 @@
-angular.module("myApp", ["ngRoute"])
+angular.module("myApp", ["ngRoute", "ngAnimate"])
 
 .config(["$routeProvider", function($routeProvider) {
     
@@ -11,7 +11,11 @@ angular.module("myApp", ["ngRoute"])
             templateUrl: "components/controllers/find/find.html",
             controller: "findController"
         })
-        .when("/ranked", {
+        .when("/champions", {
+            templateUrl: "components/controllers/ranked/ranked.html",
+            controller: "rankedController"
+        })
+        .when("/champions/:name", {
             templateUrl: "components/controllers/ranked/ranked.html",
             controller: "rankedController"
         })
@@ -37,7 +41,14 @@ angular.module("myApp", ["ngRoute"])
 
 
 
+//CORS Cross Origin Resource Sharing
+//<script> is exempt from CORS
+//JSON P json w/ Padding
+//json p sneaks requests in to script tags..
 
+
+//inject $sce to service
+//$http.jsonp($sce.trustAsResourceUrl"http://....");
 
 
 

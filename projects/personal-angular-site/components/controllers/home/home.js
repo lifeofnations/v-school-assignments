@@ -1,17 +1,16 @@
 angular.module("myApp")
 
-.controller("homeController", ["$scope", "HttpService", "Key", function($scope, HttpService, Key) {
+.controller("homeController", ["$scope", "HttpService", function($scope, HttpService) {
     
-    $scope.summoners = HttpService.trackedSummoners;
+    $scope.freeChamps = HttpService.freeChamps;
     
-    $scope.findSummoner = function (key) {
-        HttpService.getPlayer(key);
-        $scope.summoners = HttpService.trackedSummoners;
-        $scope.summonerName = "";
+    $scope.freeChamps = function () {
+        HttpService.getFreeChamps();
+        $scope.freeChamps = HttpService.freeChamps;
         console.log($scope.summoners);
     }
     
-    $scope.findSummoner(Key.key);
+    $scope.freeChamps();
     
     
     
