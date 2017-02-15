@@ -1,10 +1,22 @@
 .home-header {
-    background-color: grey;
+    color: white;
     margin-top: -40px;
+}
+
+h1, h2, h4, h5 {
+    color: white;
 }
 
 body {
     background-color: lightgray;
+}
+
+.summoner-form label, .summoner-form li {
+    color: white;
+}
+
+ul {
+    list-style: none;
 }
 
 .summoner-img {
@@ -13,21 +25,60 @@ body {
 
 .all-img {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 5px; 
+    transition: .6s, all, ease;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 15px;
+    z-index: 0;
+    filter: grayscale(40%);
+}
+
+button {
+    margin: 0px 1px;
+}
+
+.all-img:hover {
+    filter: none;
+    top: -2.5%;
+    left: -2.5%;
+    width: 105%;
+    z-index: 10;
 }
 
 .all-name {
     position: relative;
-    top: -8px;
+    bottom: -3px;
+    color: white;
+    z-index: 9;
+    
 }
 
 .splash {
     width: 100%;
 }
 
+body {
+    background-image: url(http://www.imgbase.info/images/safe-wallpapers/video_games/league_of_legends/51026_league_of_legends_league_of_legends_scenery.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
+.dummy {
+    margin-top: 110%;
+}
 
-
+.position {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    right: 5%;
+    
+    
+}
 
 @keyframes ng {
     from {display: none;}
