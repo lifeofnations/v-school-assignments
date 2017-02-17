@@ -4,6 +4,7 @@ angular.module("myApp")
 
     $scope.allChamps = HttpService.allChamps;
     $scope.skin = 0;
+    
     $scope.getChamps = function () {
         HttpService.getAllChampions()
         $scope.allChamps = HttpService.allChamps;

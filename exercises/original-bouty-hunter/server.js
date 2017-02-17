@@ -6,7 +6,7 @@ var path = require("path"); //no need to npm this one
 
 app.use(bodyParser.json());
 
-app.use(express.static(path.join("public")));  //public referes to the path in you project
+app.use(express.static(path.join(__dirname, "public")));  //public referes to the path in you project
 
 var bounties = [];
 
