@@ -1,0 +1,19 @@
+{
+  "name": "personal-angular-site",
+  "version": "1.0.0",
+  "description": "Making a League of Legends fan site using the Riot Games API, I have a developer key in a seperate service so I could put that file in my .gitignore",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "request": "^2.79.0",
+    "uuid": "^3.0.1"
+  }
+}

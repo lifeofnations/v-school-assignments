@@ -1,0 +1,34 @@
+body {
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/a2/c1/a3/a2c1a3043ce0ac237c93b2eea24e4940.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    color: white;
+}
+
+.home-crest {
+    width: 100%;
+}
+
+.home-text,
+.home-small-header {
+    background-color: rgba(69,69,69,.9);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.home-header {
+    font-size: 4em;
+}
+
+.home-small-header {
+    font-size: 2em;
+}
+
+.home-text {
+    font-size: 1.3em;
+}
