@@ -11,8 +11,22 @@
 <body ng-controller="myController">
     <div class="container">
         <div class="row">
-            <div>
+            <div class="col-sm-6">
                 <h1 class="text-center">Rock the Vote</h1>
+            </div>
+            <div class="col-sm-6">
+                <form action="">
+                    <button ng-hide="submitting" ng-click="submitting = true" type="button">Breaking Story?</button>
+                    <div ng-show="submitting">
+                        <input type="text" placeholder="title" ng-model="toPost.title">
+                        <br>
+                        <textarea placeholder="description" ng-model="toPost.description"></textarea>
+                        <br>
+                        <input type="text" placeholder="imgURL" ng-model="toPost.img">
+                        <br>
+                    <button ng-click="addPost(toPost)" type="button">Submit!</button>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="row">

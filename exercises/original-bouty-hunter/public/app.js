@@ -7,7 +7,7 @@ angular.module("myApp", [])
         HitService.find()
             .then(function(response) {
             $scope.bounties = response;
-        })
+        });
         console.log("hi", $scope.bounties)
     };
     
@@ -17,11 +17,11 @@ angular.module("myApp", [])
                 $scope.bounties.push(toAdd);
                 $scope.new = {};
                 $scope.adding = false;
-        })
+        });
         console.log("new", $scope.bounties);
     }
     
     $scope.getList();
     
     
-}])
+}]);

@@ -41,6 +41,17 @@ angular.module("myApp")
                 })
     }
 
+    this.addPost = function (newPost) {
+        return $http.post("/issues/", newPost)
+            .then(function (response) {
+                self.issues.push(response.data);
+                return response.data;
+            },
+            function (response) {
+                console.log("error");
+            })
+    }
+
 
 
 

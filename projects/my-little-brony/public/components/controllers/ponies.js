@@ -1,5 +1,16 @@
 angular.module("myApp")
 
-    .controller("ponyController", ["$scope", function ($scope) {
+    .controller("ponyController", ["$scope", "PonyService", function ($scope, PonyService) {
+
+        $scope.ponies = [];
+
+        $scope.getPonies = function () {
+            PonyService.getPonies()
+                .then(function (response) {
+                    $scope.ponies = response;
+                });
+        };
+
+        $scope.getPonies();
 
     }]);

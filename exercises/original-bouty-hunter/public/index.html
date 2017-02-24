@@ -5,82 +5,81 @@
     <meta charset="UTF-8">
     <title>Bounties</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body ng-controller="myController">
-    <div class="container">
-        <div class="row">
-            <div>
-                <h1 class="text-center">Boba's Bounties</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-8">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Credit Reward</th>
-                            <th>Type</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr ng-repeat="hit in bounties track by $index">
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                            <td>
-                                <p ng-hide="hit.editing">{{ hit.firstName }} {{ hit.lastName }}</p>
-                                <input ng-show="hit.editing">
-                                <input ng-show="hit.editing">
-                            </td>
-                            <td>
-                                <p ng-hide="hit.editing">{{ hit.bountyAmount }}</p>
-                                <input type="text" ng-show="hit.editing">
-                            </td>
-                            <td>
-                                <p ng-hide="hit.editing">{{ hit.type }}</p>
-                                <input type="text" ng-show="hit.editing">
-                            </td>
-                            <td>
-                                <button ng-hide="hit.editing">E</button>
-                                <button ng-show="hit.editing">A</button>
-                                <button ng-hide="hit.editing">R</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-sm-4">
-                <div class="text-center" ng-hide="adding">
-
-                    <img class="img-responsive" src="http://static.comicvine.com/uploads/original/4/49448/2293731-swbloodtiesbobafettisdead4__scaled_800.jpg">
-                    <button ng-click="adding = true">Add Bounty</button>
-                </div>
-                <fourm ng-show="adding">
-                   <h3 class="text-center">Who's Next?</h3>
-                    <input class="text-center" type="text" ng-model="new.firstName" placeholder="Target: first name">
-                    <input class="text-center" type="text" ng-model="new.lastName" placeholder="Target: last name">
-                    <input class="text-center" type="text" ng-model="new.bountyAmount" placeholder="Target: reward">
-                    <input class="text-center" type="text" ng-model="new.type" placeholder="Target: type">
-                    <div class="text-center">
-                        <button ng-click="addBounty(new)">Add</button>
-                    </div>
-                </fourm>
-            </div>
+<div class="container">
+    <div class="row">
+        <div>
+            <h1 class="text-center">Boba's Bounties</h1>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Credit Reward</th>
+                    <th>Type</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="hit in bounties track by $index">
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <p ng-hide="hit.editing">{{ hit.firstName }} {{ hit.lastName }}</p>
+                        <input ng-show="hit.editing">
+                        <input ng-show="hit.editing">
+                    </td>
+                    <td>
+                        <p ng-hide="hit.editing">{{ hit.bountyAmount }}</p>
+                        <input type="text" ng-show="hit.editing">
+                    </td>
+                    <td>
+                        <p ng-hide="hit.editing">{{ hit.type }}</p>
+                        <input type="text" ng-show="hit.editing">
+                    </td>
+                    <td>
+                        <button ng-hide="hit.editing">E</button>
+                        <button ng-show="hit.editing">A</button>
+                        <button ng-hide="hit.editing">R</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-4">
+            <div class="text-center" ng-hide="adding">
+
+                <img class="img-responsive"
+                     src="http://static.comicvine.com/uploads/original/4/49448/2293731-swbloodtiesbobafettisdead4__scaled_800.jpg">
+                <button ng-click="adding = true">Add Bounty</button>
+            </div>
+            <fourm ng-show="adding">
+                <h3 class="text-center">Who's Next?</h3>
+                <input class="text-center" type="text" ng-model="new.firstName" placeholder="Target: first name">
+                <input class="text-center" type="text" ng-model="new.lastName" placeholder="Target: last name">
+                <input class="text-center" type="text" ng-model="new.bountyAmount" placeholder="Target: reward">
+                <input class="text-center" type="text" ng-model="new.type" placeholder="Target: type">
+                <div class="text-center">
+                    <button ng-click="addBounty(new)">Add</button>
+                </div>
+            </fourm>
+        </div>
+    </div>
+</div>
 
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <script src="app.js"></script>
-    <script src="HitService.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="services/HitService.js"></script>
 </body>
 
 </html>

@@ -32,3 +32,8 @@ body {
 .home-text {
     font-size: 1.3em;
 }
+
+.pony-img {
+    width: auto;
+    height: 300px;
+}
