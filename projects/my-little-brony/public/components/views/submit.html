@@ -9,14 +9,15 @@
             <div class="col-sm-6">
                 <form>
                     <div class="form-group">
-                        <input class="form-controll" placeholder="Pony Name">
+                        <input class="form-controll" placeholder="Pony Name" ng-model="pony.name">
                     </div>
                     <div class="form-group">
-                        <input class="form-controll" placeholder="Img Url">
+                        <input class="form-controll" placeholder="Img Url" ng-model="pony.imgUrl">
                     </div>
                     <div class="form-group">
-                        <input class="form-controll" placeholder="username (optional)">
+                        <input class="form-controll" placeholder="username (optional)" ng-model="pony.username">
                     </div>
+                    <button type="button" class="btn btn-sm" ng-click="addPony(pony)"><a>Submit</a></button>
                 </form>
             </div>
         </div>

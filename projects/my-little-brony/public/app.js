@@ -14,5 +14,9 @@ angular.module("myApp", ["ngRoute"])
             templateUrl: "components/views/submit.html",
             controller: "submitController"
         })
+        .when("/edit/:index" , {
+            templateUrl: "components/views/submit.html",
+            controller: "editPonyController"
+        })
         .otherwise("/home")
 }]);

@@ -1,7 +1,9 @@
 <div class="row">
-    <div class="col-sm-4" ng-repeat="pony in ponies">
+    <div class="col-sm-4" ng-repeat="pony in ponies track by $index">
         <h3 class="text-center">{{ pony.name }}</h3>
         <img class="pony-img" src="{{ pony.imgUrl }}">
         <p class="text-center">posted by: {{ pony.username }}</p>
+        <a href="#/edit/{{ $index }}"><button class="btn btn-xs" type="button">Edit</button></a>
+        <button class="btn btn-xs" type="button" ng-click="deletePony($index)">Delete</button>
     </div>
 </div>

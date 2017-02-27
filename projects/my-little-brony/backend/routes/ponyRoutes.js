@@ -30,6 +30,7 @@ ponyRoutes.route("/:id")
         });
     })
     .put(function (req, res) {
+        console.log("made it to put");
         MyLittlePony.findByIdAndUpdate(req.params.id, req.body, {new: true}, function (err, updatedPony) {
             if (err) return res.status(500).send(err);
             res.send(updatedPony);

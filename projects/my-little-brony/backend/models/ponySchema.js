@@ -11,7 +11,8 @@ var ponySchema = new mongoose.Schema({
     },
     username: {
         type: String,
-        required: true
+        required: true,
+        default: "Anonymous"
     }
 });
 

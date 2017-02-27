@@ -5,16 +5,28 @@ angular.module("myApp")
 
     this.ponies = [];
 
-    // this.addPony = function () {
-    //
-    // };
+    this.addPony = function (pony, isUpdate) {
+        var input = "post", id = "";
+        if (isUpdate) input = "put", id = pony._id;
+        return $http[input]("/ponies/" + id, pony)
+            .then(function (response) {
+                return self.ponies;
+            }, function (response) {
+                console.log("error");
+            })
+    };
 
-    // this.removePony = function () {
-    //
-    // };
+    this.removePony = function (index) {
+        return $http.delete("/ponies/" + self.ponies[index]._id)
+            .then(function (response) {
+                return response.data;
+            },
+            function (response) {
+                console.log(response, "error");
+            })
+    };
 
     this.getPonies = function () {
-        console.log("trying");
         return $http.get("/ponies")
             .then(function (response) {
                 self.ponies = response.data;
@@ -22,7 +34,7 @@ angular.module("myApp")
             },
             function (response) {
                 console.log("error", response);
-            });
+            })
     };
 
 }]);

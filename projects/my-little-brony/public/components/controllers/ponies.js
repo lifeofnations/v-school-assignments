@@ -13,4 +13,11 @@ angular.module("myApp")
 
         $scope.getPonies();
 
+        $scope.deletePony = function (index) {
+            PonyService.removePony(index)
+                .then(function (response) {
+                    return $scope.getPonies();
+                })
+        };
+
     }]);

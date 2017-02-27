@@ -25,7 +25,7 @@ angular.module("myApp", ["ngRoute", "ngAnimate"])
         })
         .otherwise("/home")
       
-}])
+}]);
 
 
 

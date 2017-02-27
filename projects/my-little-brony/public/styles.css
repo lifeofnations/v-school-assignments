@@ -21,6 +21,10 @@ body {
     border-radius: 5px;
 }
 
+input {
+    background-color: black;
+}
+
 .home-header {
     font-size: 4em;
 }

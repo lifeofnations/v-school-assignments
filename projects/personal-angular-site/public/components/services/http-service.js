@@ -1,6 +1,5 @@
 angular.module("myApp")
 
-
 .service("HttpService", ["$http", "Key", "$sce", function ($http, Key, $sce) {
     var self = this;
 
