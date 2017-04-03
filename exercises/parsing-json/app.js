@@ -23,6 +23,12 @@ function parsePokemon(input) {
 }
 
 
+var aNumber = Number()
+
+
+
+
+
 
 
 

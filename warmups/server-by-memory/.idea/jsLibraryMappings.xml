@@ -3,6 +3,5 @@
   <component name="JavaScriptLibraryMappings">
     <file url="PROJECT" libraries="{angular-DefinitelyTyped, angular-animate-DefinitelyTyped, angular-route-DefinitelyTyped, express-DefinitelyTyped, node-DefinitelyTyped}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
-    <excludedPredefinedLibrary name="first-mean-stack-app/node_modules" />
   </component>
 </project>

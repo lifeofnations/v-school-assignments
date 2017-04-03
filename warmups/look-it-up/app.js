@@ -1,6 +1,7 @@
 var ask = require("readline-sync");
 var dictionary = [];
 var active = true;
+var realDictionary = {};
 
 dictionary[wordInput] = definitionInput;
 
@@ -22,7 +23,6 @@ function alreadyAddedChecker(wordInput) {
         return true;
     }
 }
-
 
 function dictionaryLookUp(word) {
     for (var i = 0; i < dictionary.length; i++) {
@@ -49,6 +49,10 @@ function useDictionary(add, lookUp) {
         var newWord = ask.question("\nWhat word would you like to add? ");
         var definition = ask.question("\nWhat is the definition of this word? ");
         addToDictionary(newWord, definition);
+
+        realDictionary[newWord] = definition;
+
+
         break;
     case "quit":
         active = false;

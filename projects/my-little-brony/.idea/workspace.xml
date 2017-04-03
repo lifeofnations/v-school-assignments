@@ -43,7 +43,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ponies.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ponies.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/components/views/ponies.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="75">
@@ -63,15 +63,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PonyService.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="PonyService.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/components/services/PonyService.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="360">
                   <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-                  <folding>
-                    <marker date="1488220664000" expanded="true" signature="76:1101" ph="{...}" />
-                    <marker date="1488220664000" expanded="true" signature="168:481" ph="{...}" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -100,11 +97,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ponyRoutes.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ponyRoutes.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend/routes/ponyRoutes.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+                <state relative-caret-position="300">
+                  <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ponyAuthentication.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/middleware/ponyAuthentication.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -130,7 +137,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ponies.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ponies.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/components/controllers/ponies.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="300">
@@ -186,7 +193,6 @@
         <option value="$PROJECT_DIR$/public/styles.css" />
         <option value="$PROJECT_DIR$/public/components/controllers/submit.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/backend/routes/ponyRoutes.js" />
         <option value="$PROJECT_DIR$/backend/models/ponySchema.js" />
         <option value="$PROJECT_DIR$/public/components/views/submit.html" />
         <option value="$PROJECT_DIR$/public/app.js" />
@@ -194,6 +200,7 @@
         <option value="$PROJECT_DIR$/public/components/services/PonyService.js" />
         <option value="$PROJECT_DIR$/public/components/controllers/ponies.js" />
         <option value="$PROJECT_DIR$/public/components/views/ponies.html" />
+        <option value="$PROJECT_DIR$/backend/routes/ponyRoutes.js" />
       </list>
     </option>
   </component>
@@ -213,7 +220,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-348" />
+    <option name="x" value="-294" />
     <option name="y" value="-1080" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
@@ -473,12 +480,12 @@
       <option name="presentableId" value="Default" />
       <updated>1487709935169</updated>
       <workItem from="1487709938472" duration="8778000" />
-      <workItem from="1487779736763" duration="24734000" />
+      <workItem from="1487779736763" duration="31384000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33512000" />
+    <option name="totallyTimeSpent" value="40162000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -490,8 +497,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-348" y="-1080" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <frame x="-294" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09373354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -578,10 +585,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1488220664000" expanded="true" signature="76:1101" ph="{...}" />
-            <marker date="1488220664000" expanded="true" signature="168:481" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,14 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/middleware/ponyAuthentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/components/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -673,22 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/ponySchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/components/views/submit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -701,14 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -731,25 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/components/services/PonyService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <marker date="1488220664000" expanded="true" signature="76:1101" ph="{...}" />
-            <marker date="1488220664000" expanded="true" signature="168:481" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/ponyRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/components/controllers/ponies.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -762,6 +715,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/ponySchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/middleware/ponyAuthentication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/components/services/PonyService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/routes/ponyRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding />
         </state>
       </provider>
