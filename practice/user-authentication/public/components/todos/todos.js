@@ -32,6 +32,4 @@ app.controller("TodoController", ["$scope", "$http", "TodoService", function ($s
 
 }]);
 
-//    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
-
 //    ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ api key
