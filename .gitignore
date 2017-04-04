@@ -1,4 +1,5 @@
 .DS_Store
 node_modules/
 /projects/personal-angular-site/components/services/key.js
-practice/user-authentication/config.js
+/practice/user-authentication/config.js
+config.js
